@@ -7,7 +7,6 @@
 4. [Prerequisites](#prerequisites)
 5. [Usage](#usage)
 6. [Benchmarking](#benchmarking)
-7. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -24,8 +23,8 @@ Welcome to the Low-Latency Programming Repository, a project aimed to serve both
 Clone this repository to your local machine to get started.
 
 ```bash
-git clone https://github.com/0burak/imperial_hft.git
-cd imperial_hft
+git clone https://github.com/arhamgarg/imperial-hft.git
+cd imperial-hft
 ```
 
 ### Prerequisites
@@ -36,7 +35,7 @@ cd imperial_hft
 
 ## Usage
 
-After Google Benchmark has been installed and the benchmark folder if in the same directory as the mybenchmark.cc file, the user can compile the my-benchmark.cc file using the makefile provided in the repository.
+After Google Benchmark has been installed and the benchmark folder is in the same directory as the mybenchmark.cc file, the user can compile the mybenchmark.cc file using the makefile provided in the repository.
 
 ```bash
 g++ mybenchmark.cc -std=c++20 -isystem benchmark/include -Lbenchmark/build/src -lbenchmark -lpthread -o mybenchmark
@@ -45,7 +44,3 @@ g++ mybenchmark.cc -std=c++20 -isystem benchmark/include -Lbenchmark/build/src -
 ## Benchmarking
 
 All techniques and strategies are rigorously benchmarked for latency reduction, cache efficiency, and overall performance. The `benchmark/` directory contains all benchmarking scripts.
-
-## Acknowledgments
-
-- A special thanks to Dr Paul A. Bilokon for his evaluation and invaluable feedback.
